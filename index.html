@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <!--& Start Navbar Section-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container py-4 px-5">
+            <div class="logo d-flex align-items-center" role="button">
+                <img src="img/logo@2x.png" alt="logo icon">
+                <div class="logo-name mx-2 d-flex flex-column">
+                    <h1 class="h6 text-light">Weather</h1>
+                    <small>tagline goes here</small>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="barIcon text-light fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto my-4">
+                    <li class="nav-item">
+                        <a class="nav-link active py-2 px-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar Section-->
+
+    <!--& Start Landing Section  -->
+    <section id="land" class="land pt-5">
+        <div class="container py-5 px-5">
+            <div class="search-sec position-relative">
+                <input type="text" name="" id="searchInput"
+                    class="searchInp form-control rounded-pill border-0 px-3 py-3 position-relative"
+                    placeholder="Find your location...">
+                <a class="searchSub btn text-light position-absolute rounded-pill py-2 px-4">Find</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Landing Section  -->
+
+    <!--& Start Board Section  -->
+    <section id="board" class="board">
+        <div class="container px-5">
+
+            <div class="row">
+                <div class="col-md-4 p-0">
+                    <div class="box h-100 text-light">
+
+                        <div class="day d-flex justify-content-between px-2 py-3">
+                            <span id="boxDay"></span>
+                            <span id="boxMonth"></span>
+                        </div>
+                        <div class="box-body px-3 py-5">
+                            <h4 id="location"></h4>
+                            <div class="wether d-flex justify-content-between align-items-center my-3">
+                                <h1 id="deg" class="display-1 fw-bold text-light"></h1>
+                                <img id="imgWeth" class="w-25">
+                            </div>
+                            <p id="weatherType"></p>
+                            <div class="box-footer">
+                                <span id="humidity"> </span>
+                                <span id="wind" class="mx-3"></span>
+                                <span id="windDir"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-0">
+                    <div class="box box-cen text-center h-100 text-light">
+                        <div class="day day-cen p-2">
+                            <span id="nextDay"></span>
+
+                        </div>
+                        <div class="box-body p-3">
+                            <img id="nextDayImg" />
+                            <div class="wether my-5">
+                                <h3 id="tempNextDay" class="text-light fw-bold"></h3>
+                                <span id="tempNextDayNight"></span>
+                            </div>
+                            <p id="typeNextDay"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-0">
+                    <div class="box h-100 text-center text-light">
+                        <div class="day p-2">
+                            <span id="thDay"></span>
+
+                        </div>
+                        <div class="box-body p-3">
+                            <img id="thDayImg">
+                            <div class="wether my-5">
+                                <h3 id="tempThDay" class="text-light fw-bold"></h3>
+                                <span id="tempThDayNight"></span>
+                            </div>
+                            <p id="typeThDay" class="pb-5"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Board Section  -->
+
+    <!--& Start Footer Section  -->
+    <footer>
+        <div class="container px-5 py-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="email-box d-flex position-relative">
+                        <input class="form-control rounded-pill border-0 px-3 py-3" type="text" name="" id=""
+                            placeholder="Enter your email to subscribe...">
+                        <a class="text-light rounded-pill py-2 px-4 position-absolute" href="#">Subscribe</a>
+                    </div>
+                    <p class="mt-4 text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <div class="links mt-3">
+                        <ul class="d-flex justify-content-evenly text-center">
+                            <li> <a href="#" class="p-2 rounded-circle"><i class="fa-brands fa-facebook fs-5"></i></a>
+                            </li>
+                            <li> <a href="#" class="p-2 rounded-circle"><i class="fa-brands fa-twitter fs-5"></i></a>
+                            </li>
+                            <li> <a href="#" class="p-2 rounded-circle"><i
+                                        class="fa-brands fa-google-plus-g fs-5"></i></a> </li>
+                            <li> <a href="#" class="p-2 rounded-circle"><i class="fa-brands fa-pinterest fs-5"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="js/jq.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

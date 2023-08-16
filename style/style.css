@@ -1,0 +1,127 @@
+:root{
+    --mainColor:#009AD8;
+    --bgColor:#1E202B;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: var(--bgColor);
+}
+.logo {
+    line-height: 0.1;
+}
+.logo img
+{
+    width: 70px;
+}
+.logo-name small{
+    font-size: 13px;
+    color:#999;
+}
+nav .nav-item .nav-link 
+{
+    color: #fff;
+    transition:color .3s;
+    -webkit-transition:color .3s;
+    -moz-transition:color .3s;
+    -ms-transition:color .3s;
+    -o-transition:color .3s;
+    border: 2px solid transparent;
+    margin:0 5px ;
+    font-size: 15px;
+}
+nav .nav-item .nav-link:hover,
+nav .nav-item .nav-link.active  {
+    color:var(--mainColor) !important;
+    border: 2px solid var(--mainColor);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* End Nav */
+.land {
+    background-image: url("../img/banner.png");
+    height: 70vh;
+    background-size:cover;
+    background-position: center center;
+}
+.searchInp{
+    background-color:var(--bgColor) ;
+}
+.searchInp:focus,
+footer .email-box input:focus{
+    box-shadow: none;
+    background-color:var(--bgColor) ;
+    color:#fff
+}
+.searchInp::placeholder,
+footer .email-box input::placeholder{
+    color:#777
+} 
+.searchSub {
+    right:4px;
+    top:7px;
+    background-color: var(--mainColor);
+}
+.searchSub:hover{
+    background-color:var(--mainColor)
+}
+/* End landing */
+
+.board{
+ background-color: var(--bgColor);
+}
+.board .row .col-md-4 {   
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.box .day {
+    background-color: #2D303D;
+}
+.box {
+    background-color: #323544;
+}
+.box-body p {
+    color:var(--mainColor)
+}
+.box .day-cen {
+    background-color: var(--bgColor);
+}
+.box-cen {
+    background-color: #262936 
+}
+footer {
+    background-color: #262936;
+}
+footer .email-box a{
+    right:4px;
+    top:8px;
+    background-color: var(--mainColor);
+}
+footer .email-box input{
+    background-color:var(--bgColor) ;
+}
+footer .email-box a:hover{
+    background-color:var(--mainColor)
+}
+footer .links li:hover a{
+    color:#fff;
+    background-color: var(--mainColor);
+}
+footer .links a {
+    color:var(--mainColor);
+    background-color: var(--bgColor);
+}
